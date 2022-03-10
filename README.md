@@ -15,7 +15,7 @@ python train_TransMEF.py --root './coco' --batch_size 24 --save_path './train_re
 ```
 
 ### For fusion
-* We use the [benchmark dataset MEFB](https://github.com/xingchenzhang/MEFB) for evaluation.
+* We use the [benchmark dataset MEFB](https://github.com/xingchenzhang/MEFB) for evaluation, and all images are converted to 256 * 256 grayscale images.
 * For a quick start, please run 
 ```shell
 python fusion_gray_TransMEF.py --model_path './bestmodel.pth' --test_path './MEFB_dataset/' --result_path './TransMEF_result' 
