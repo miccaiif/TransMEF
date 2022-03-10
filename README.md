@@ -8,7 +8,7 @@ This is a PyTorch/GPU implementation of the AAAI2022 paper [TransMEF: A Transfor
 
 ### For training
 * We use the [MS-COCO dataset](https://voxel51.com/docs/fiftyone/user_guide/dataset_zoo/datasets.html#dataset-zoo-coco-2017) for self-supervised training 
-and all images are converted to 256*256 grayscale images.
+and all images are converted to 256 * 256 grayscale images.
 * For a quick start, please run 
 ```shell
 python train_TransMEF.py --root './coco' --batch_size 24 --save_path './train_result_TransMEF' --summary_name 'TransMEF_qiuck_start_'
@@ -18,7 +18,7 @@ python train_TransMEF.py --root './coco' --batch_size 24 --save_path './train_re
 * We use the [benchmark dataset MEFB](https://github.com/xingchenzhang/MEFB) for evaluation, and all images are converted to 256 * 256 grayscale images.
 * For a quick start, please run 
 ```shell
-python fusion_gray_TransMEF.py --model_path './bestmodel.pth' --test_path './MEFB_dataset/' --result_path './TransMEF_result' 
+python fusion_gray_TransMEF.py --model_path './best_model.pth' --test_path './MEFB_dataset/' --result_path './TransMEF_result' 
 ```
 * Managing RGB Input
 
