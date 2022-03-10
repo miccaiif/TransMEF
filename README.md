@@ -27,6 +27,10 @@ python fusion_gray_TransMEF.py --model_path './bestmodel.pth' --test_path './MEF
 * Managing Arbitrary input size images
   
     We recommend to use the sliding window strategy to fuse input images of arbitrary non-256 * 256 size, i.e., fusing images of 256 * 256 window size at a time.
+    
+* Best model in this paper
+
+    Please refer to this [link](https://drive.google.com/file/d/1a-i_M7i-rns9pyu-PxkOKuL3RWoza8em/view?usp=sharing) for the best model employed in this paper.
 
 ### Fusion results of TransMEF
 
