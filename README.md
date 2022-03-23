@@ -35,7 +35,7 @@ python fusion_gray_TransMEF.py --model_path './best_model.pth' --test_path './ME
     
 * Best model in this paper
 
-    Please refer to this [link](https://drive.google.com/file/d/1a-i_M7i-rns9pyu-PxkOKuL3RWoza8em/view?usp=sharing) for the best model employed in this paper.
+    Please refer to this [link for Google Drive](https://drive.google.com/file/d/1a-i_M7i-rns9pyu-PxkOKuL3RWoza8em/view?usp=sharing)/ [link for Baidu Disk](https://pan.baidu.com/s/1PDUkL_z6DLnHa6mIQy-HPA?pwd=jcx3) for the best model employed in this paper.
 
 ### Fusion results of TransMEF
 
