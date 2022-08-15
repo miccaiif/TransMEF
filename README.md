@@ -55,11 +55,14 @@ python fusion_gray_TransMEF.py --model_path './best_model.pth' --test_path './ME
 ### Citation
 If this work is helpful to you, please cite it as:
 ```
-@article{qu2021transmef,
-  title={TransMEF: A Transformer-Based Multi-Exposure Image Fusion Framework using Self-Supervised Multi-Task Learning},
+@inproceedings{qu2022transmef,
+  title={Transmef: A transformer-based multi-exposure image fusion framework using self-supervised multi-task learning},
   author={Qu, Linhao and Liu, Shaolei and Wang, Manning and Song, Zhijian},
-  journal={arXiv preprint arXiv:2112.01030},
-  year={2021}
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={36},
+  number={2},
+  pages={2126--2134},
+  year={2022}
 }
 ```
 
