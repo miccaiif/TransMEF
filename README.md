@@ -52,6 +52,24 @@ python fusion_gray_TransMEF.py --model_path './best_model.pth' --test_path './ME
 ![Main metrics](https://github.com/miccaiif/TransMEF/blob/main/main_metric.png)
 
 
+### Frequently Asked Questions
+
+* The fused images are all black.
+
+  Please mind your input path. It is likely that the input images are not loaded due to the wrong path. You could attempt to pass the test path to the class test_gray and use an absolute path instead of a relative one.
+
+* Fusion of arbitary size images.
+
+  We recommend to use the sliding window strategy to fuse input images of arbitrary non-256 * 256 size, i.e., fusing images of 256 * 256 window size at a time. The code is available now at [fusing intput images with arbitary size](https://github.com/miccaiif/TransMEF/blob/main/fusion_arbitary_size_TransMEF_gray.py)
+    
+* Error loading pretrained model.
+
+  There are two points to note. 1) Please check the downloaded models, as many errors for the models are caused by download problems. 2) Please do not change the argument '--gpus' in the argparse at the beginning of the code. Its default value is '0,1', which means the provided model was trained using two gpus. Changing this value will cause errors in loading model parameters.
+  
+* For evaluation metrics.
+
+  You can refer to Zhang's [MEFB](https://github.com/xingchenzhang/MEFB) for details. But several metrics may not work with my practice.
+
 ### Citation
 If this work is helpful to you, please cite it as:
 ```
@@ -65,16 +83,6 @@ If this work is helpful to you, please cite it as:
   year={2022}
 }
 ```
-
-### Frequently Asked Questions
-
-* The fused images are all black.
-
-  Please mind your input path. It is likely that the input images are not loaded due to the wrong path. You could attempt to pass the test path to the class test_gray and use an absolute path instead of a relative one.
-
-* Fusion of arbitary size images.
-
-    We recommend to use the sliding window strategy to fuse input images of arbitrary non-256 * 256 size, i.e., fusing images of 256 * 256 window size at a time. The code is available now at [fusing intput images with arbitary size](https://github.com/miccaiif/TransMEF/blob/main/fusion_arbitary_size_TransMEF_gray.py)
 
 ### Contact Information
 If you have any question, please email to me [lhqu20@fudan.edu.cn](lhqu20@fudan.edu.cn).
