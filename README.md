@@ -1,7 +1,7 @@
 ## Official-PyTorch-Implementation-of-TransMEF
 
 <p align="center">
-  <img src="https://github.com/miccaiif/TransMEF/blob/main/method.png" width="640">
+  <img src="https://github.com/miccaiif/TransMEF/blob/main/method.png" width="960">
 </p>
 
 This is a PyTorch/GPU implementation of the AAAI2022 paper [TransMEF: A Transformer-Based Multi-Exposure Image Fusion Framework using Self-Supervised Multi-Task Learning](https://arxiv.org/abs/2112.01030):
