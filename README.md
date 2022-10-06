@@ -33,7 +33,7 @@ python fusion_gray_TransMEF.py --model_path './best_model.pth' --test_path './ME
   
     We recommend to use the sliding window strategy to fuse input images of arbitrary non-256 * 256 size, i.e., fusing images of 256 * 256 window size at a time.
     
-    We will make this part available soon!
+    The code is available now at [fusing intput images with arbitary size](https://github.com/miccaiif/TransMEF/blob/main/fusion_arbitary_size_TransMEF_gray.py)
     
 * Best model in this paper
 
@@ -65,6 +65,16 @@ If this work is helpful to you, please cite it as:
   year={2022}
 }
 ```
+
+### Frequently Asked Questions
+
+* The fused images are all black.
+
+  Please mind your input path. It is likely that the input images are not loaded due to the wrong path. You could attempt to pass the test path to the class test_gray and use an absolute path instead of a relative one.
+
+* Fusion of arbitary size images.
+
+    We recommend to use the sliding window strategy to fuse input images of arbitrary non-256 * 256 size, i.e., fusing images of 256 * 256 window size at a time. The code is available now at [fusing intput images with arbitary size](https://github.com/miccaiif/TransMEF/blob/main/fusion_arbitary_size_TransMEF_gray.py)
 
 ### Contact Information
 If you have any question, please email to me [lhqu20@fudan.edu.cn](lhqu20@fudan.edu.cn).
