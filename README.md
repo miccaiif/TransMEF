@@ -1,4 +1,4 @@
-## Official-PyTorch-Implementation-of-TransMEF
+## 🌟 Official-PyTorch-Implementation-of-TransMEF
 
 <p align="center">
   <img src="https://github.com/miccaiif/TransMEF/blob/main/method.png" width="720">
